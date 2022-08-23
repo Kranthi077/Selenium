@@ -5,7 +5,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.devtools.idealized.Javascript;
 
 public class Test2 {
 
@@ -18,8 +17,7 @@ public class Test2 {
 		// It will create an object for Chrome driver().
 		WebDriver d = new ChromeDriver(co);
 		// It will tell system where your diver is located
-		System.setProperty("webdriver.chrome.driver",
-				"C:/Users/Aishwarya Jangampeta/Kranthi/eclipse-workspace/Selenium/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		d.manage().window().maximize();
 		d.get("https://www.spicejet.com/");
 		Thread.sleep(2000);
@@ -50,3 +48,6 @@ public class Test2 {
 	}
 
 }
+
+
+
