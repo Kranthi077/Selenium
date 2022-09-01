@@ -18,9 +18,13 @@ public class End2end {
 
 		d.manage().window().maximize();
 		d.get("https://rahulshettyacademy.com/dropdownsPractise/");
+		
 		d.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
+		
 		d.findElement(By.xpath("//a[@value=\"IXG\"]")).click();
+		
 		d.findElement(By.xpath("(//a[@value=\"HYD\"])[2]")).click();
+		
 		d.findElement(By.className("ui-datepicker-today")).click();
 
 		d.findElement(By.id("divpaxinfo")).click();
