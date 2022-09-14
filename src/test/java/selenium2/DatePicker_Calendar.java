@@ -27,7 +27,7 @@ public class DatePicker_Calendar {
 		d.get("https://www.redbus.in/");
 		d.findElement(By.id("onward_cal")).click();
 		String month = d.findElement(By.className("monthTitle")).getText();
-		while (!month.contains("Sept")) {
+		while (!month.contains("Nov")) {
 			Thread.sleep(2000);
 			d.findElement(By.className("next")).click();
 			Thread.sleep(2000);
@@ -38,9 +38,10 @@ public class DatePicker_Calendar {
 		System.out.println(days.size());
 		for (int i = 0; i < days.size(); i++) {
 			String day = days.get(i).getText();
-			if (day.equalsIgnoreCase("5")) {
+			if (day.equalsIgnoreCase("7")) {
 				Thread.sleep(2000);
 				days.get(i).click();
+				Thread.sleep(2000);
 				break;
 			}
 		}

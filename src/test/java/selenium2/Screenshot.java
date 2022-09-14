@@ -26,6 +26,7 @@ public class Screenshot {
 		File source = screenshot.getScreenshotAs(OutputType.FILE);
 		File destination = new File("AmazonHomePage.png");
 		FileUtils.copyFile(source, destination);
+		d.quit();
 		
 	}
 
