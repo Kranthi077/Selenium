@@ -22,10 +22,10 @@ public class Screenshot {
 		
 		// Screenshot code
 		
-		TakesScreenshot screenshot = (TakesScreenshot) d;
-		File source = screenshot.getScreenshotAs(OutputType.FILE);
-		File destination = new File("AmazonHomePage.png");
-		FileUtils.copyFile(source, destination);
+		TakesScreenshot screenshot = (TakesScreenshot) d; // we have to typecast driver object to TakesScreenshot type
+		File source = screenshot.getScreenshotAs(OutputType.FILE);// with the help of getScreenshotAs method available in TakesScreenshot, we can screen shot in the form of FILE type
+		File destination = new File("AmazonHomePage.png");// we will create a destination file of type .png or .jpg
+		FileUtils.copyFile(source, destination); // we will paste source to destination using file utils from apache.com.io
 		d.quit();
 		
 	}
